@@ -1,6 +1,6 @@
-package com.imooc;
+package com.imooc.repostories;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.imooc.domain.Girl;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

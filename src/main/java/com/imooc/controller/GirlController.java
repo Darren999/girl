@@ -1,6 +1,8 @@
-package com.imooc;
+package com.imooc.controller;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.imooc.service.GirlService;
+import com.imooc.domain.Girl;
+import com.imooc.repostories.GirlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
