@@ -1,0 +1,4 @@
+
+在使用getmapping查询某个id的时候会遇到错误
+findOne的方法已经更改，而如果是getone的话就会报错。
+必须使用findById(id).get()才能获取到正确的方法。

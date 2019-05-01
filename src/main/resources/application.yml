@@ -2,4 +2,13 @@ server:
   port: 8082
 spring:
   profiles:
-    active: prod
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dbgirl
+    username: root
+    password: abc.1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
