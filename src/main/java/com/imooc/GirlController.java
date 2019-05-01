@@ -12,6 +12,9 @@ public class GirlController {
     @Autowired
     private GirlRepository girlRepository;
 
+    @Autowired
+    private GirlService girlService;
+
     @GetMapping(value = "/girls")
     public List<Girl> getGirlList(){
         return girlRepository.findAll();
@@ -59,5 +62,10 @@ public class GirlController {
     @GetMapping(value = "girls/cupSize/{cupSize}")
     public List<Girl> girlfindAllByCupSize(@PathVariable("cupSize") String cupSize){
         return girlRepository.findAllByCupSize(cupSize);
+    }
+
+    @PostMapping(value = "/girls/two")
+    public void insertTwo(){
+        girlService.insertTwo();
     }
 }
