@@ -10,6 +10,7 @@ public class Girl {
     @Id/*Id 表示数据库的主键*/
     @GeneratedValue/*自增*/
     private Integer id;
+
     private String cupSize;
 
     @Min(value = 18,message = "未成年少女禁止入内")
